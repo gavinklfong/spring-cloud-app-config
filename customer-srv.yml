@@ -1,0 +1,29 @@
+server:
+  port: 8103
+
+info:
+  app:
+    description: Customer Service
+    name: Customer Service
+    version: 1.0.0
+
+spring:
+  cloud:
+    application:
+      name: customer-srv   
+  datasource:
+    url: jdbc:mysql://localhost:3306/insurance  
+    username: spring-app-user
+    password: spring
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    
+eureka:
+  client:
+  region: default
+  registryFetchIntervalSeconds: 5
+  healthcheck:
+    enabled: true  
+  serviceUrl:
+    defaultZone: http://localhost:8082/eureka/

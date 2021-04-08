@@ -1,0 +1,29 @@
+server:
+  port: 8102
+
+info:
+  app:
+    description: Quotation Service
+    name: Quotation Service
+    version: 1.0.0
+    
+app:
+  customerEndPoint: http://localhost:8103/customers/
+  productEndPoint: http://localhost:8101/products/
+
+spring:
+  cloud:
+    application:
+      name: quotation-srv        
+        
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+  
+logging:
+  level:
+    space.gavinklfong: DEBUG
+ 
