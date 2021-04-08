@@ -1,0 +1,28 @@
+#spring:
+#  config:
+#    import: configserver:http://localhost:8888
+    
+#eureka:
+#    client:
+#        fetch-registry: false
+#        register-with-eureka: false
+#        serviceUrl:
+#            defaultZone: http://localhost:8082/eureka/
+#    instance:
+#        hostname: localhost
+info:
+    app:
+        description: This is an infrastructure service for discovery microservices
+        name: Discovery Service
+        version: 1.0.0
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+server:
+    port: 8082
+spring:
+    application:
+        name: discovery
+
