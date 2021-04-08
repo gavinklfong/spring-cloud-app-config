@@ -8,9 +8,6 @@ info:
     version: 1.0.0
 
 spring:
-  cloud:
-    application:
-      name: customer-srv   
   datasource:
     url: jdbc:mysql://localhost:3306/insurance  
     username: spring-app-user

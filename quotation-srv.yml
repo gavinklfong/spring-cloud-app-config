@@ -10,12 +10,7 @@ info:
 app:
   customerEndPoint: http://localhost:8103/customers/
   productEndPoint: http://localhost:8101/products/
-
-spring:
-  cloud:
-    application:
-      name: quotation-srv        
-        
+            
 eureka:
   client:
     region: default
