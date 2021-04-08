@@ -1,5 +1,11 @@
 server:
   port: 8101
+
+info:
+  app:
+    description: Product Service
+    name: Product Service
+    version: 1.0.0
   
 eureka:
   client:
@@ -10,8 +16,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8082/eureka/
 
-info:
-  app:
-    description: Product Service
-    name: Product Service
-    version: 1.0.0
+
