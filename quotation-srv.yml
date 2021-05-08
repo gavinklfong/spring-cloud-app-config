@@ -8,8 +8,8 @@ info:
     version: 1.0.0
     
 app:
-  customerEndPoint: http://localhost:8103/customers/
-  productEndPoint: http://localhost:8101/products/
+  quotation:
+    expiryTime: 1440
             
 eureka:
   client:
